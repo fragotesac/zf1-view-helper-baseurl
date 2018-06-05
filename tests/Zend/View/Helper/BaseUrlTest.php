@@ -52,7 +52,7 @@ class Zend_View_Helper_BaseUrlTest extends PHPUnit\Framework\TestCase
     protected function setUp()
     {
         $this->_previousBaseUrl = Zend_Controller_Front::getInstance()->getBaseUrl();
-        $this->_server = $_SERVER;
+        $this->_server          = $_SERVER;
     }
 
     /**
