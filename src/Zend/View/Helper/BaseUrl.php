@@ -103,7 +103,7 @@ class Zend_View_Helper_BaseUrl extends Zend_View_Helper_Abstract
         }
 
         if (($pos = strripos($url, basename($_SERVER['SCRIPT_NAME']))) !== false) {
-            $url = substr($url, 0, $pos);
+            $url = substr($url, 0, (int) $pos);
         }
 
         return $url;
